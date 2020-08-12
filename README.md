@@ -3,8 +3,6 @@
 
 # An android app for pets and pet lovers
 
-### Backend Service
-* [PetsApp Backend](https://github.com/mecitdeniz/PetsAppBackend)
 
 ## Features
 ### Users can :
@@ -17,6 +15,8 @@
 * Send message to others
 
 
+### Backend Service
+* [PetsApp Backend](https://github.com/mecitdeniz/PetsAppBackend)
 
 
 [Logo]: https://github.com/mecitdeniz/PetsApp/blob/master/app/src/main/res/drawable-v24/bg_dog.png
