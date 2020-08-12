@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/ilan_arka_plan"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:id="@+id/parent_kullanici_layout_kullanici"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView_kullanici_layout_profil_resmi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_kullanici_layout_ad_soyad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İsim Soy isim"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+            />
+            <TextView
+                android:id="@+id/tv_kullanici_layout_kullanici_adi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kullanıcı Adı"
+                />
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tv_kullanici_layout_rol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kullanıcı"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

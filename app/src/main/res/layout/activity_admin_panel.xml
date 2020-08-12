@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanelActivity">
+
+    <include
+        android:id="@+id/admin_panel_toolbar"
+        layout="@layout/anasayfa_toolbar"/>
+    <LinearLayout
+        android:id="@+id/admin_panel_parent_arama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_below="@+id/admin_panel_toolbar">
+        <EditText
+            android:id="@+id/editText_arama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@color/ligtGray"
+            android:hint="Kullanıcı adı"/>
+        <ImageView
+            android:id="@+id/imageView_iptal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/ligtGray"
+            android:paddingRight="5dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_close"/>
+        <ImageView
+            android:id="@+id/imageView_arama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_baseline_search_24"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/parent_uyari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_below="@+id/admin_panel_parent_arama">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Kullanıcı bulunamadı.."/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/admin_panel_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_below="@+id/admin_panel_parent_arama"/>
+</RelativeLayout>

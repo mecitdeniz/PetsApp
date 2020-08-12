@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/ilan_arka_plan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/yorum_layout_top"
+            >
+            <TextView
+                android:id="@+id/tv_yorum_layout_tarih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/yorum_layout_profil_resmi"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_supervisor_account">
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <LinearLayout
+                android:id="@+id/parent_yorum_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_yorum_layout_ad_soyad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" AAAAA"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/tv_yorum_layout_kullanici_adi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="aaaaaaa"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Açıklama : "/>
+            <TextView
+                android:id="@+id/tv_yorum_aciklama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" AAAAA"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="5dp"
+            android:layout_gravity="center"
+            android:paddingVertical="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puan : "/>
+            <RatingBar
+                android:id="@+id/yorum_layout_ratingBar_oy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:progressTint="@color/colorPrimaryDark"
+                style="?android:attr/ratingBarStyleSmall">
+            </RatingBar>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MesajActivity">
+
+    <include
+        android:id="@+id/mesajlar_toolbar"
+        layout="@layout/anasayfa_toolbar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mesajlar_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/parent_mesaj_gonder"
+        android:scrollbars="none"
+        android:layout_below="@+id/mesajlar_toolbar">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/parent_mesaj_gonder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:gravity="center"
+        android:background="@drawable/btn_login"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/editText_mesaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusedByDefault="false"
+            android:hint="Bir şeyler yaz"/>
+
+        <ImageButton
+            android:id="@+id/btn_mesaj_gonder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/white"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/fab_arka_plan"
+            android:src="@drawable/ic_baseline_near_me">
+        </ImageButton>
+    </LinearLayout>
+
+</RelativeLayout>

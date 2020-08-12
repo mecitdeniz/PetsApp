@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/basvuru_layout2_top"
+            >
+            <TextView
+                android:id="@+id/tv_basvuru_layout2_tarih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - ">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_basvuru_layout2_durum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/basvuru_layout2_profil_resmi"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_supervisor_account">
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <LinearLayout
+                android:id="@+id/parent_basvuru_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_basvuru_aciklama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" AAAAA"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/tv_basvuru_layout2_kullanici_adi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="aaaaaaa"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/basvuru_layout2_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/ilan_layout2_top"
+            android:paddingHorizontal="5dp">
+            <ImageView
+                android:id="@+id/basvuru_layout2_resim"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_launcher_foreground" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/tv_basvuru_layout2_baslik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="30dp"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:text="İlan Başlığı" />
+                <TextView
+                    android:id="@+id/tv_basvuru_layout2_aciklama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="30dp"
+                    android:textSize="12dp"
+                    android:text="Buraya açıklama gelecek, tamam mı ? Anlaşıldı mı? Hadi ozaman ne duruyosun?" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ilan_layout2_body">
+
+            <LinearLayout
+                android:id="@+id/parent_basvuru_layout2_mesaj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="5dp"
+                    android:text="Mesaj"/>
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:tint="@android:color/holo_green_dark"
+                    android:src="@drawable/ic_baseline_message"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/parent_basvuru_layout2_sil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="5dp"
+                    android:text="Sil"/>
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/ic_delete_forever" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

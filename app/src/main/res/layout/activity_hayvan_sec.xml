@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HayvanSecActivity">
+
+
+    <include
+        android:id="@+id/hayvan_sec_toolbar"
+        layout="@layout/ilan_toolbar">
+    </include>
+
+    <GridView
+        android:id="@+id/hayvan_sec_liste"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hayvan_sec_toolbar"
+        android:numColumns="2"
+        />
+
+
+</RelativeLayout>

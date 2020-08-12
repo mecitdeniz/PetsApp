@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasvuranlarActivity">
+
+    <include
+        android:id="@+id/basvuranlar_toolbar"
+        layout="@layout/anasayfa_toolbar">
+    </include>
+
+    <LinearLayout
+        android:id="@+id/parent_basvuranlar_basvuru_yok"
+        android:layout_below="@+id/basvuranlar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Hay Aksi! Görünüşe göre henüz başvuran olmamış :("
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/basvuranlar_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@+id/basvuranlar_toolbar" />
+</RelativeLayout>

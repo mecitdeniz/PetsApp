@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    android:background="@drawable/ilan_arka_plan"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/ilan_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ilan_layout_profil_resmi"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:id="@+id/parent_ilan_layout_kullanici"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_kullanici_adi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/tv_ilan_yer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView_ilan_layout_secenekler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_more_vert_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ilan_layout_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ilan_layout_top"
+        android:paddingHorizontal="5dp">
+        <ImageView
+            android:id="@+id/ilan_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_foreground" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/tv_ilan_baslik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="40dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_ilan_aciklama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="35dp"
+                android:textSize="14sp"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

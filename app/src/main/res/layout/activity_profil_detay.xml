@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilDetayActivity">
+
+    <include
+        android:id="@+id/profil_toolbar"
+        layout="@layout/profil_toolbar">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="5dp"
+        android:layout_below="@+id/profil_toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layout_profil_resmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profil_toolbar"
+                android:orientation="vertical"
+                android:background="@drawable/ilan_arka_plan"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profil_resmi"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    tools:src="@tools:sample/avatars"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/colorPrimaryDark">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/tv_profil_kullanici_adi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tv_profil_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/parent_yorumlar_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ilan_arka_plan"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/layout_profil_resmi"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_view_yorum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Yorumlar"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+                <RatingBar
+                    android:id="@+id/ratingBar_oy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:progressTint="@color/colorPrimaryDark"
+                    style="?android:attr/ratingBarStyleSmall"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_profil_resmi"
+                android:background="@drawable/ilan_arka_plan"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="Evcil Hayvanlar"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+                <GridView
+                    android:id="@+id/gridView_hayvanlar"
+                    android:layout_width="match_parent"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content">
+                </GridView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IlanDuzenleActivity">
+
+    <include
+        layout="@layout/anasayfa_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        android:text="Topluluğumuzu güvende tutmamız için bir açıklama girmeniz gerekmektedir."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/editText_sikayet_aciklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Uygunsuz içerik"
+            android:layout_weight="1">
+        </EditText>
+        <Button
+            android:id="@+id/btn_sikayet_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fab_arka_plan"
+            android:textColor="@color/white"
+            android:text="Şikayet et">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/basvurular_toolbar"
+        layout="@layout/anasayfa_toolbar">
+    </include>
+
+    <TextView
+        android:id="@+id/tv_basvuru_uyari"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/basvurular_toolbar"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:text="Görünüşe göre hiç başvurunuz bulunmamakta..">
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/basvurular_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_below="@+id/basvurular_toolbar">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

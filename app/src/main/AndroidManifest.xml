@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mecitdeniz.petto" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true" >
+        <activity android:name=".SifreYenileActivity" >
+        </activity>
+        <activity android:name=".HayvanDuzenleActivity" />
+        <activity android:name=".ProfilDuzenleActivity" />
+        <activity android:name=".YorumlarActivity" />
+        <activity android:name=".YorumlaActivity" />
+        <activity android:name=".ProfilDetayActivity" />
+        <activity android:name=".OnayBekleyenIlanActivity" />
+        <activity android:name=".IlanSikayetlerActivity" />
+        <activity android:name=".SikayetlerActivity" />
+        <activity android:name=".EditorPanelActivity" />
+        <activity android:name=".AdminPanelActivity" />
+        <activity android:name=".MesajActivity" />
+        <activity android:name=".BasvuranlarActivity" />
+        <activity android:name=".HayvanSecActivity" />
+        <activity android:name=".IlanEkleActivity" />
+        <activity android:name=".HayvanEkleActivity" />
+        <activity android:name=".SikayetEtActivity" />
+        <activity android:name=".IlanDuzenleActivity" />
+        <activity android:name=".HayvanDetayActivity" />
+        <activity android:name=".BasvurularActivity" />
+        <activity android:name=".IlanDetay" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

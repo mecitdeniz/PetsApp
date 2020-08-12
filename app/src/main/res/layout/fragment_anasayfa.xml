@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnasayfaFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/anasayfa_toolbar"
+            layout="@layout/anasayfa_toolbar">
+        </include>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ilan_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="5dp"
+            android:layout_below="@+id/anasayfa_toolbar" />
+
+    </RelativeLayout>
+</FrameLayout>

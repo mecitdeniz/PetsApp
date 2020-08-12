@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IlanSikayetlerActivity">
+
+    <include
+        android:id="@+id/ilan_sikayet_toolbar"
+        layout="@layout/anasayfa_toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ilan_sikayet_recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="8dp"
+        android:layout_below="@+id/ilan_sikayet_toolbar"/>
+
+</RelativeLayout>
