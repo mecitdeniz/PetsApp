@@ -2,21 +2,11 @@
 
 # An android app for pets and pet lovers
 
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673122.png" width="240"> |
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673122.png" width="240"> |
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673172.png" width="240"> |
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673172.png" width="240">
-
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673122.png" width="240"> |
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673122.png" width="240"> |
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673172.png" width="240"> |
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673172.png" width="240">
-
-
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673122.png" width="240"> |
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673122.png" width="240"> |
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673172.png" width="240"> |
-<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673172.png" width="240">
+In this Project, I developed an android application using Java, Spring Boot, Hibernate, MSSQL and
+Android Studio. By using this application, animal lovers can adopt a new pet instead of buying one
+and also they can create an advert to find a trusted pet sitter when they needed. They can interpret
+and score the pet sitters. By doing this they can be sure that their pets are in trusted hands. The
+purpose of this application is to reduce pet sales.
 
 
 ## Features
