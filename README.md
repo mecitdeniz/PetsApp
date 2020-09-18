@@ -1,8 +1,10 @@
-# PetsApp
-![Logo]
+# PetsApp <img src="https://github.com/mecitdeniz/PetsApp/blob/master/app/src/main/res/drawable-v24/bg_dog.png" width="60">  
 
 # An android app for pets and pet lovers
 
+<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673122.png" width="240"> |
+<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673122.png" width="240"> |
+<img src="https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592673122.png" width="240">
 
 ## Features
 ### Users can :
@@ -18,7 +20,5 @@
 ### Backend Service
 * [PetsApp Backend](https://github.com/mecitdeniz/PetsAppBackend)
 
-
-[Logo]: https://github.com/mecitdeniz/PetsApp/blob/master/app/src/main/res/drawable-v24/bg_dog.png
-[photo1]: https://github.com/mecitdeniz/PetsApp/blob/master/screenshots/Screenshot_1592672796.png
+          
 
