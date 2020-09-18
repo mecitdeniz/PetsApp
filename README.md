@@ -8,6 +8,7 @@ and also they can create an advert to find a trusted pet sitter when they needed
 and score the pet sitters. By doing this they can be sure that their pets are in trusted hands. The
 purpose of this application is to reduce pet sales.
 
+[![](http://img.youtube.com/vi/DXnhItcXJbc/0.jpg)](http://www.youtube.com/watch?v=DXnhItcXJbc "App Demo")
 
 ## Features
 ### Users can :
